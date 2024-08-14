@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: beige;
+        }
+        fieldset{
+            background-color: rgb(51, 51, 51);
+            border-radius: 7px;
+            color: aliceblue;
+        }
+
+        legend{
+            font-size: larger;
+            
+        }
+    </style>
+</head>
+<body style="background-color: rgb(197, 192, 186)">
+    <h1 style="text-align: center;">FORMULIR PENDAFTARAN PRAKTIK KERJA LAPANGAN </h1>
+    <form>
+        <fieldset style="align-items: center; ">
+            <legend>Biodata</legend>
+            <label for="nama">nama lengkap</label><br>
+            <input type="text"><br>
+            <label for="kelas">kelas</label><br>
+            <input type="text"><br>
+            <label for="tempat lahir">tempat lahir</label><br>
+            <input type="text"><br>
+            <label for="ttl"> tanggl lahir</label><br>
+            <input type="date" name="ttl" id="usia"><br>
+            <label for="usia">usia</label><br>
+            <input type="number" name="usia" id="usia"><br>
+            <label for="agama">agama</label><br>
+            <select name="agama" id="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen protestan</option>
+                <option value="kristen1">Kristen katolik</option>
+                <option value="budha">Buddha</option>
+                <option value="hindu">Hindu</option>
+                <option value="khonghuchu">Khonghuchu</option>
+            </select>
+            <br>
+            <p>jeniskelamin:</p>
+            <input type="radio" name="jeniskelamin" id="perempuan" value="permpuan">
+            <label for="jk">permpuan</label><br>
+            <input type="radio" name="jeniskelamin" id="laki laki">
+            <label for="jk">laki laki</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Alamat</legend>
+            <label for="alamat">Alamat lengkap</label>
+            <br>
+            <textarea name="alamat" id="alamat"></textarea><br>
+            <label for="rt">RT</label><br>
+            <input type="number" name="rt" id="rt" max="100" min="1"><br>
+            <label for="rt">RW</label><br>
+            <input type="number" name="rt" id="rt" max="100" min="1"><br>
+            <label for="desa">desa/kelurahan</label> <br>
+            <select name="desa" id="desa">
+                <option value="cipada">Cipada</option>
+                <option value="jambudipa">Jambudipa</option>
+                <option value="kertawangi">kERTAWANGI</option>
+                <option value="padaasih">PADASIH</option>
+                <option value="pasirhalang">PASIRHALANG</option>
+                <option value="pasirlangu">PASIRLANGU</option>
+                <option value="sadang mukar">SADANG MUKAR</option>
+            </select><br>
+            <label for="kecamatan">kecamatan</label><br>
+            <select name="kecamatan" id="kecamatan">
+                <option value="cisarua">CIPADA</option>
+                <option value="cipatat">CIPATAT</option>
+                <option value="cikalongweatan">CIKALONGWETAN</option>
+                <option value="lembang">LEMBANG</option>
+                <option value="ngamprah">NGAMPRAH</option>
+                <option value="parongpong">PARONGPONG</option>
+                <option value="padalarang">PADALARANG</option>
+            </select><br>
+            <label for="kabupaten">kabupaten</label><br>
+            <select name="kabupatan" id="kabupaten">
+                <option value="kbb">kab bandung barat</option>
+                <option value="kb">kab Bandung</option>
+                <option value="kc">kab Cianjur</option>
+                <option value="ks">kab Sumedang</option>
+                <option value="kob">kota Bandung</option>
+                <option value="kci">kota Cimahi</option>
+            </select><br>
+            <label for="provinsi">provinsi</label><br>
+            <select name="provinsi" id="provinsi">
+                <option value="jabar">JAWA BARAT</option>
+                <option value="jateng">JAWA TENGAH</option>
+                <option value="jatim">JAWA TIMUR</option>
+                <option value="dki">JAKARTA</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>kontak</legend>
+            <label for="nohp">telepon siswa</label><br>
+            <input type="tel" name="nohp" id="nohp"><br>
+            <label for="nowali">telepon ortu </label><br>
+            <input type="tel" name="nowali" id="nowali"><br>
+            <label for="email">email siswa</label><br>
+            <input type="email" name="email" id="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Akun</legend>
+            <label for="username">User Name</label><br>
+            <input type="text"><br>
+            <label for="pw">password</label><br>
+            <input type="password" name="pw" id="pw"><br>
+            <label for="kpw">konfirmasi password</label><br>
+            <input type="password" name="kpw" id="kpw">
+        </fieldset>
+        <fieldset>
+            <legend>tempat pkl</legend>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">telokmsel</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">PSSI</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom"> NASA</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">SpaceX</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">Youtube</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">Meta</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">Kominfo</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">indomart</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">alfamart</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">bank bri</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">beacukai</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">shopee</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">j&t</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">GUCCI</label><br>
+            <input type="checkbox" name="telkom" id="telkom">
+            <label for="telkom">Google</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Uplod persyaratan</legend>
+            <label for="file-upload">Pilih Foto:</label><br>
+        <input type="file" id="file-upload" name="foto" accept="image/*">
+        <br><br>
+        <label for="file-upload">kartu pelajar</label><br>
+        <input type="file" id="file-upload" name="foto" accept="image/*">
+        <br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </fieldset>
+    </form>
+    <footer style="text-align: center; background-color: rgb(209, 206, 206); padding: 15px;">
+        <p>m.Raihan &copy;2024</p>
+    </footer>
+</body>
+              </html>
